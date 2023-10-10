@@ -11,7 +11,7 @@ import configure
 import sqlite3
 import datetime
 
-bot = telebot.TeleBot(configure.config["token"], threaded=True, num_threads=300)
+bot = telebot.TeleBot(configure.config["token"])
 bot.add_custom_filter(custom_filters.TextMatchFilter())
 bot.add_custom_filter(custom_filters.ChatFilter())
 
